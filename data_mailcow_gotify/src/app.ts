@@ -161,7 +161,7 @@ export class App{
     }
 
     private createJobs(){
-        this._jobHandler.add( new GotifyPushMessageJob(process.env["GFY.GOTIFY.ADDRESS"]||"", process.env["GFY.GOTYFY.HEALTH"]||""));
+        this._jobHandler.add( new GotifyPushMessageJob(process.env["GFY_GOTIFY_ADDRESS"]||"", process.env["GFY_GOTYFY_HEALTH"]||""));
         this._jobHandler.add( 
             RedisConnectJob.getInstance(<ClientOpts>{
                         port: parseInt(process.env.REDIS_SLAVEOF_PORT || '6379') || 6379,
