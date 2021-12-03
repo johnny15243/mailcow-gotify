@@ -3,28 +3,25 @@
   "version": "0.1.0",
   "description": "read redis-logs and push to gotify server",
   "main": "app.js",
+  "author":"johnny15243 <opensource@jpb-edv.de> (https://github.com/johnny15243/mailcow-gotify)",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node ./src/app.ts",
-    "start:prod": "npm run build && node ./dist/src/app.js",
+    "start:prod": "npm run build && node ./dist/app.js",
     "start:nodemon": "nodemon",
     "build": "npx tsc"
   },
-  "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/redis": "^2.8.32",
     "axios": "^0.24.0",
     "dotenv": "^10.0.0",
-    "npm-cli": "^0.1.0",
-    "redis": "^3.1.2",
-    "uuid": "^8.3.2"
+    "redis": "^3.1.2"
   },
   "devDependencies": {
     "@swc/core": "^1.2.111",
     "@swc/wasm": "^1.2.111",
     "@types/node": "^16.11.9",
-    "@types/uuid": "^8.3.3",
+    "@types/redis": "^2.8.32",
     "nodemon": "^2.0.15",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.2"
