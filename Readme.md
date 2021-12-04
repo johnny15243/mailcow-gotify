@@ -27,7 +27,7 @@ Allowed environment variables in mailcow.conf<br>In the table used spacer \<serv
 ## Needed environment variables
 ENV | Default | Sample |  Description
 --- | --- | --- | --- 
-GFY_GOTIFY_ADDRESS | "" | "https://nfy.jpb-edv.de/message" | Full address where to send the gotify messages
+GFY_GOTIFY_ADDRESS | "" | "https://gotify.sample.gov/message" | Full address where to send the gotify messages
 GFY_GOTYFY_HEALTH | "" | "https://gotify.sample.gov/health" | Checks Health-Status of Gotify-Server. If any Problems exist, no Messages will be send.
 
 
